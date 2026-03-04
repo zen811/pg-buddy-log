@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home, MapPin, Bell, UserCircle, Menu } from 'lucide-react';
+import { Home, MapPin, UserCircle, Menu } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -19,9 +19,6 @@ export default function Navbar() {
           </nav>
           
           <div className="flex items-center gap-3">
-            <button className="p-2 text-gray-400 hover:text-primary transition-colors">
-              <Bell className="size-5" />
-            </button>
             <Link to="/login" className="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold transition-transform hover:scale-105">
               Login
             </Link>

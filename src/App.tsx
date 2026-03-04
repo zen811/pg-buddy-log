@@ -12,6 +12,9 @@ import ListingsPage from './pages/Listings';
 import RoomDetailsPage from './pages/RoomDetails';
 import ContactPage from './pages/Contact';
 import LoginPage from './pages/Login';
+import PrivacyPolicyPage from './pages/PrivacyPolicy';
+import TermsOfServicePage from './pages/TermsOfService';
+import FAQPage from './pages/FAQ';
 
 export default function App() {
   return (
@@ -25,8 +28,9 @@ export default function App() {
             <Route path="/listings/:id" element={<RoomDetailsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<LoginPage />} />
-            <Route path="/privacy" element={<div className="p-20 text-center">Privacy Policy Page</div>} />
-            <Route path="/terms" element={<div className="p-20 text-center">Terms of Service Page</div>} />
+            <Route path="/privacy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms" element={<TermsOfServicePage />} />
+            <Route path="/faq" element={<FAQPage />} />
           </Routes>
         </main>
         <Footer />
