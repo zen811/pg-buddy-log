@@ -1,0 +1,36 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import HomePage from './pages/Home';
+import ListingsPage from './pages/Listings';
+import RoomDetailsPage from './pages/RoomDetails';
+import ContactPage from './pages/Contact';
+import LoginPage from './pages/Login';
+
+export default function App() {
+  return (
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/listings" element={<ListingsPage />} />
+            <Route path="/listings/:id" element={<RoomDetailsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/privacy" element={<div className="p-20 text-center">Privacy Policy Page</div>} />
+            <Route path="/terms" element={<div className="p-20 text-center">Terms of Service Page</div>} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
