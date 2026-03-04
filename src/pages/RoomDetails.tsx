@@ -104,6 +104,24 @@ export default function RoomDetailsPage() {
           <hr className="border-border-dark" />
 
           <section>
+            <h3 className="text-xl font-bold mb-6">Location</h3>
+            <div className="bg-zinc-900/50 border border-border-dark rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6">
+              <div className="size-20 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <MapPin className="size-10" />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <p className="text-white font-bold text-lg mb-1">{listing.area}, {listing.location}</p>
+                <p className="text-gray-500 text-sm mb-4">Coordinates: {listing.lat.toFixed(4)}, {listing.lng.toFixed(4)}</p>
+                <button className="bg-zinc-800 hover:bg-zinc-700 text-white px-6 py-2 rounded-lg text-sm font-bold transition-colors">
+                  View on Google Maps
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <hr className="border-border-dark" />
+
+          <section>
             <h3 className="text-xl font-bold mb-6">House Rules</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-start gap-3">
@@ -154,13 +172,10 @@ export default function RoomDetailsPage() {
               </div>
 
               <button className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2 mb-3">
-                Book Now
-              </button>
-              <button className="w-full bg-transparent hover:bg-white/5 text-white border border-border-dark font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2">
                 Send Inquiry
               </button>
               <p className="text-center text-[11px] text-gray-500 mt-4">
-                You won't be charged yet. We'll contact you for verification.
+                We'll contact you for verification and property visit.
               </p>
             </div>
             

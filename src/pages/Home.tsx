@@ -26,9 +26,9 @@ export default function HomePage() {
               <Link to="/listings" className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 md:h-14 px-8 bg-primary text-white text-base font-bold shadow-lg shadow-primary/20 hover:bg-orange-600 transition-all">
                 Browse PG Listings
               </Link>
-              <button className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 md:h-14 px-8 border-2 border-primary text-primary bg-primary/5 backdrop-blur-sm text-base font-bold hover:bg-primary/10 transition-all">
+              <Link to="/post-listing" className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 md:h-14 px-8 border-2 border-primary text-primary bg-primary/5 backdrop-blur-sm text-base font-bold hover:bg-primary/10 transition-all">
                 List Your Property
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -143,9 +143,9 @@ export default function HomePage() {
         <div className="max-w-[960px] mx-auto text-center flex flex-col items-center gap-6">
           <h2 className="text-white text-3xl font-black">Are you a property owner?</h2>
           <p className="text-gray-400 text-lg max-w-[600px]">List your PG with us today and reach thousands of prospective residents. We handle the discovery, you handle the hospitality.</p>
-          <button className="bg-primary text-white font-bold py-4 px-10 rounded-lg hover:bg-orange-600 shadow-xl shadow-primary/30 transition-all">
+          <Link to="/post-listing" className="bg-primary text-white font-bold py-4 px-10 rounded-lg hover:bg-orange-600 shadow-xl shadow-primary/30 transition-all">
             List Your Property for Free
-          </button>
+          </Link>
         </div>
       </section>
     </motion.div>

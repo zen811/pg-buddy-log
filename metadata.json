@@ -1,5 +1,5 @@
 {
   "name": "PG Buddy",
   "description": "A premium PG accommodation finder for students and professionals with real-time listings and easy booking.",
-  "requestFramePermissions": []
+  "requestFramePermissions": ["geolocation"]
 }

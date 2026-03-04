@@ -15,6 +15,7 @@ import LoginPage from './pages/Login';
 import PrivacyPolicyPage from './pages/PrivacyPolicy';
 import TermsOfServicePage from './pages/TermsOfService';
 import FAQPage from './pages/FAQ';
+import PostListingPage from './pages/PostListing';
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/terms" element={<TermsOfServicePage />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/post-listing" element={<PostListingPage />} />
           </Routes>
         </main>
         <Footer />

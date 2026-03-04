@@ -20,7 +20,7 @@ export default function Footer() {
           <h4 className="font-bold text-white">Quick Links</h4>
           <ul className="flex flex-col gap-2 text-sm text-gray-400">
             <li><Link to="/listings" className="hover:text-primary transition-colors">Browse PGs</Link></li>
-            <li><Link to="/listings" className="hover:text-primary transition-colors">Post a Listing</Link></li>
+            <li><Link to="/post-listing" className="hover:text-primary transition-colors">Post a Listing</Link></li>
             <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
             <li><Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link></li>
           </ul>
